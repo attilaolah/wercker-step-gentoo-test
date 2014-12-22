@@ -1,10 +1,9 @@
 box: attilaolah/gentoo
 build:
   steps:
-    - attilaolah/gentoo@1.0.1:
-        command: |
-          echo one
-          echo two
-          echo this works…
     - attilaolah/gentoo:
-        command: echo this works too…
+        command: echo "This is a command."
+    - attilaolah/gentoo:
+        command: |
+          echo "This is a multi-line command."
+          echo "It will all be executed by a single shell call."
