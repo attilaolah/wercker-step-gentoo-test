@@ -1,0 +1,10 @@
+box: attilaolah/gentoo
+build:
+  steps:
+    - attilaolah/gentoo@1.0.1:
+        command: |
+          echo one
+          echo two
+          echo this works…
+    - attilaolah/gentoo:
+        command: echo this works too…
